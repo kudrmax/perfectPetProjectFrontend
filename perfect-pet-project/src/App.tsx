@@ -1,4 +1,6 @@
 import PostList from './components/PostList/PostList.tsx';
+import NewPostBox from "./components/NewPostBox/NewPostBox.tsx";
+import {useState} from "react";
 
 const posts = [
     {
@@ -12,8 +14,16 @@ const posts = [
 ];
 
 function App() {
+    const [newText, setNewText] = useState('');
+
     return (
         <>
+            <NewPostBox
+                name="Макс Кудряшов"
+                username="kudrmax"
+                value={newText}
+                onChange={setNewText}
+            />
             <PostList posts={posts}/>
         </>
     );

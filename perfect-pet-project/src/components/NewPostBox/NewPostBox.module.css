@@ -1,0 +1,29 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    width: 600px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.textarea {
+    padding: 10px 15px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: none;
+    resize: vertical;
+
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: inherit;
+    color: #333;
+}
+
+.textarea::placeholder {
+    color: #aaa;
+}
