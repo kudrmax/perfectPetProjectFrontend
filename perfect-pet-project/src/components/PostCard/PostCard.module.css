@@ -1,21 +1,6 @@
 .card {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 16px;
-    max-width: 600px;
-    background-color: #fff;
-}
-
-.name {
-    font-weight: bold;
-}
-
-.username {
-    color: #777;
-    font-size: 0.9rem;
-}
-
-.text {
-    margin-top: 8px;
-    line-height: 1.5;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

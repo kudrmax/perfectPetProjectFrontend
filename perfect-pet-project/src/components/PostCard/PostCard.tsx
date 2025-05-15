@@ -1,4 +1,6 @@
 import styles from './PostCard.module.css';
+import PostHeader from './PostHeader';
+import PostContent from './PostContent';
 
 interface Post {
     name: string;
@@ -11,16 +13,12 @@ interface PostCardProps {
 }
 
 function PostCard({post}: PostCardProps) {
-    const {name, username, text} = post
     return (
         <article className={styles.card}>
-            <header>
-                <div className={styles.name}>{name}</div>
-                <div className={styles.username}>@{username}</div>
-            </header>
-            <p className={styles.text}>{text}</p>
+            <PostHeader name={post.name} username={post.username}/>
+            <PostContent text={post.text}/>
         </article>
-    )
+    );
 }
 
 export default PostCard;
