@@ -1,6 +1,3 @@
 .card {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    composes: cardLayout from './../../style/shared.module.css';
 }

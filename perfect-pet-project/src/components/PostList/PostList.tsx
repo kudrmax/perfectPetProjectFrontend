@@ -13,7 +13,7 @@ interface PostListProps {
 
 function PostList({posts}: PostListProps) {
     return (
-        <div className={styles.list}>
+        <div className={styles.feedLayout}>
             {posts.map((post, index) => (
                 <PostCard key={index} post={post}/>
             ))}

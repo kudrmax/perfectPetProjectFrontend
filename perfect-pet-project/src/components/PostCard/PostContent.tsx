@@ -5,7 +5,7 @@ interface PostContentProps {
 }
 
 function PostContent({ text }: PostContentProps) {
-    return <div className={styles.content}>{text}</div>;
+    return <div className={styles.cardContentStyle}>{text}</div>;
 }
 
 export default PostContent;

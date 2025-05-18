@@ -1,15 +1,15 @@
-.box {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+/*.box {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 12px;*/
 
-    width: 600px;
-    padding: 16px;
-    border-radius: 12px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    box-sizing: border-box;
-}
+/*    width: 600px;*/
+/*    padding: 16px;*/
+/*    border-radius: 12px;*/
+/*    border: 1px solid #ccc;*/
+/*    background-color: #fff;*/
+/*    box-sizing: border-box;*/
+/*}*/
 
 .textarea {
     padding: 10px 15px;
@@ -26,4 +26,8 @@
 
 .textarea::placeholder {
     color: #aaa;
+}
+
+.box {
+    composes: cardLayout from './../../style/shared.module.css';
 }

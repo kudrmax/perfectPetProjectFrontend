@@ -1,7 +1,5 @@
-.header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.cardHeaderLayout {
+    composes: cardHeaderLayout from './../../style/shared.module.css';
 }
 
 .avatar {
@@ -12,23 +10,16 @@
     flex-shrink: 0;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
+.cardHeaderTextsLayout {
+    composes: cardHeaderTextsLayout from './../../style/shared.module.css';
 }
 
-
 .name {
-    font-weight: 700;
-    font-size: 16px;
-
-    color: #000;
+    composes: textBold from './../../style/shared.module.css';
 }
 
 .username {
-    font-weight: 400;
-    font-size: 16px;
+    composes: textBase from './../../style/shared.module.css';
 }
 
 

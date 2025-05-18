@@ -1,6 +1,8 @@
 import PostList from './components/PostList/PostList.tsx';
 import NewPostBox from "./components/NewPostBox/NewPostBox.tsx";
 import {useState} from "react";
+import shared from './style/shared.module.css';
+
 
 const posts = [
     {
@@ -17,7 +19,7 @@ function App() {
     const [newText, setNewText] = useState('');
 
     return (
-        <>
+        <div className={shared.feedLayout}>
             <NewPostBox
                 name="Макс Кудряшов"
                 username="kudrmax"
@@ -25,7 +27,7 @@ function App() {
                 onChange={setNewText}
             />
             <PostList posts={posts}/>
-        </>
+        </div>
     );
 }
 

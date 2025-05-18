@@ -1,7 +1,56 @@
-.containerCard {
+/* ====== Типографика ====== */
 
+.textBase {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
 }
 
-.contentBlock {
+.textBold {
+    composes: textBase;
+    font-weight: 700;
+}
 
+.textMuted {
+    composes: textBase;
+    color: #777;
+}
+
+/* ====== Пост ====== */
+
+.cardContentStyle {
+    padding: 15px 13px;
+    border-radius: 13px;
+    background-color: #F2F2F2;
+
+    composes: textBase;
+}
+
+.cardLayout {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardHeaderLayout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardHeaderTextsLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+/* ====== Лента ====== */
+
+.feedLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 32px;
 }
